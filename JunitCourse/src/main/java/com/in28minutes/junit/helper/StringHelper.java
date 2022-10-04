@@ -8,6 +8,7 @@ public class StringHelper {
 		if (str.length() <= 2)
 			return str.replaceAll("A", "");
 
+		System.out.println("does this get printed?");
 		String first2Chars = str.substring(0, 2);
 		String stringMinusFirst2Chars = str.substring(2);
 
