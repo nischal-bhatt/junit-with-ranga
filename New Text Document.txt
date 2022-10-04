@@ -1,0 +1,15 @@
+-unit testing with mockito
+-ranga karanam
+-mockito to develop testable apps
+-understanding how to develop testable applications 
+-what is junit
+-what is unit testing
+-how to do mocking with mockito 
+-how to write great tests with junit and mockito 
+-github mockitotutorialforbeginners
+-basic unit testing with junit 
+-annotations, asserts , etc 
+-why mockings?
+-alternatives to mocking ? 
+-spies
+-java programming is the prerequisite
