@@ -1,7 +1,10 @@
 package com.in28minutes.business;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -58,5 +61,20 @@ public class ListTest {
 		//nice mock!
 		
 	}
+	
+	
+	@Test
+	public void letsMockListGet3usingBDD() {
+		//given
+		List<String> listMock = mock(List.class);
+		given(listMock.get(anyInt())).willReturn("in28mins");
+		//when
+		
+		String firstElement=listMock.get(100);
+		//then
+		assertThat(firstElement,is("in28mins"));
+		
+	}
+	
 
 }
